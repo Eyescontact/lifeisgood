@@ -17,7 +17,7 @@ isolation="|"
 
 sed -i '3i\ <br /> '"$str"' <br />' Dayfeelingline.md
 sed -i '3i\ <br /> '"$send"'' Dayfeelingline.md
-sed -i '3i\ <br /> '"$isolation"'' Dayfeelingline.md
+sed -i '3i\ '"$isolation"'' Dayfeelingline.md
 
 git add -A
 git commit -m "$send feeling push"
