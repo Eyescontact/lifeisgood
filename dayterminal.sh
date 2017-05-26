@@ -15,9 +15,9 @@ str="|-----^"${feeling}"^"
 isolation="|"
 #echo $isolation
 
-sed -i '3i\ <br /> '"$str"'' Dayfeelingline.md
-sed -i '3i\ <br /> '"$send"'' Dayfeelingline.md
-sed -i '3i\ <br /> ###&nbsp '"$isolation"'' Dayfeelingline.md
+sed -i '3i\ <br /> '"$str"' <br />' Dayfeelingline.md
+sed -i '3i\ '"$send"'' Dayfeelingline.md
+sed -i '3i\ <br /> '"$isolation"'' Dayfeelingline.md
 
 git add -A
 git commit -m "$send feeling push"
