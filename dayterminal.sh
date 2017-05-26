@@ -3,13 +3,27 @@
 cd ~/github/lifeisgood 
 
 echo Hi,Bold. 今天心情如何？
-send=`date '+%Y年%m月%d日 %H:%M'`
-#echo `date '+%Y年%m月%d日 %H:%M'`
-echo $send
+send=`date '+%Y年%m月%d日%H:%M'`
+#echo `date '+%Y年%m月%d日%H:%M'`
+send="|---$send"
+#echo $send
 
-read feeling 
-str="|-------------**"${feeling}"**"		
-echo $str  
+read  feeling 
+str="|-----^"${feeling}"^"		
+#echo $str  
 
-last="`cd -`"
-cd $last
+isolation="|"
+#echo $isolation
+
+sed -i 1i\ "$str" Dayfeelline.md
+sed -i 1i\ "$send" Dayfeelline.md
+sed -i 1i\ "$isolation" Dayfeelline.md
+
+git commit -am "$send feeling push"
+
+git push
+
+lastdir="`cd -`"
+cd $lastdir
+
+
