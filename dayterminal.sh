@@ -21,7 +21,7 @@ sed -i 1i\ "$isolation" Dayfeelline.md
 
 git commit -am "$send feeling push"
 
-git push
+git push origin master
 
 lastdir="`cd -`"
 cd $lastdir
