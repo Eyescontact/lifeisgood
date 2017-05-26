@@ -16,7 +16,7 @@ isolation="|"
 #echo $isolation
 
 sed -i '3i\ <br /> '"$str"' <br />' Dayfeelingline.md
-sed -i '3i\ '"$send"'' Dayfeelingline.md
+sed -i '3i\ <br /> '"$send"'' Dayfeelingline.md
 sed -i '3i\ <br /> '"$isolation"'' Dayfeelingline.md
 
 git add -A
