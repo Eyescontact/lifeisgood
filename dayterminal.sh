@@ -15,8 +15,8 @@ str="|-----^"${feeling}"^"
 isolation="|"
 #echo $isolation
 
-sed -i 1i\\n "$str" Dayfeelline.md
-sed -i 1i\\n "$send" Dayfeelline.md
+sed -i 1i\ \n "$str" Dayfeelline.md
+sed -i 1i\ \n "$send" Dayfeelline.md
 sed -i 1i\\n "$isolation" Dayfeelline.md
 
 git add -A
