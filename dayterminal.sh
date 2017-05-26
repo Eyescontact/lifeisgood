@@ -19,7 +19,8 @@ sed -i 1i\ "$str" Dayfeelline.md
 sed -i 1i\ "$send" Dayfeelline.md
 sed -i 1i\ "$isolation" Dayfeelline.md
 
-git commit -am "$send feeling push"
+git add -A
+git commit -m "$send feeling push"
 
 git push origin master
 
