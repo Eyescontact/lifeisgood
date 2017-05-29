@@ -15,6 +15,8 @@ str="|-----^"${feeling}"^"
 isolation="|"
 #echo $isolation
 
+git pull
+
 sed -i '3i\ <br /> '"$str"' <br />' Dayfeelingline.md
 sed -i '3i\ <br /> '"$send"'' Dayfeelingline.md
 sed -i '3i\ '"$isolation"'' Dayfeelingline.md
