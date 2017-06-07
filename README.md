@@ -4,4 +4,4 @@
  <br />ps:参考赵吉彤同学的知乎专栏：https://zhuanlan.zhihu.com/p/22886782 
  <br />执行 : . ./dayterminal.sh （绝对路径）<br />
  现已自动启动（启动稍慢）
- 
+ 2、实现简单自动push功能，并用alias映射为ep命令 17.6.7 
