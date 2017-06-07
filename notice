@@ -1,3 +1,4 @@
 1. notion:dont input space!!
 2. notice '3i\ <br /> '"$str"'' for github md file!
 3. run: . ./dayterminal.sh 
+4. 运行gnome-session-properties 添加 gnome-terminal -x bash -c ". ~/github/lifeisgood/dayterminal.sh"开机自启动终端和脚本
